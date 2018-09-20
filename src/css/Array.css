@@ -1,0 +1,64 @@
+body {
+  background-color: #4383e8;
+}
+.display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container {
+  width: 25%;
+  margin: auto;
+}
+.mouse {
+  cursor: pointer;
+  border: 1px solid black;
+}
+.mouseCursor {
+  cursor: pointer;
+}
+.btn {
+  border: none;
+  color: #4383e8;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
