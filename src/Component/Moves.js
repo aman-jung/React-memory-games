@@ -4,10 +4,7 @@ class Moves extends Component {
   render() {
     return (
       <div>
-        <h1>
-          Move:
-          {this.props.move}
-        </h1>
+        <h1>Moves - {this.props.move}</h1>
       </div>
     );
   }
