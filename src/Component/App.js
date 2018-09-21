@@ -13,7 +13,7 @@ class App extends Component {
     this.Matched = this.Matched.bind(this);
     this.NotMatched = this.NotMatched.bind(this);
     this.sweetAlert = this.sweetAlert.bind(this);
-    this.Restart = this.Restart.bind(this);
+    this.restart = this.restart.bind(this);
     this.startTimer = this.startTimer.bind(this);
     this.startTimerOnFirstClick = this.startTimerOnFirstClick.bind(this);
   }
@@ -39,7 +39,7 @@ class App extends Component {
       }
       return arr;
     }
-    shuffle(this.state.pictures);
+    //shuffle(this.state.pictures);
   }
 
   sweetAlert() {
@@ -54,23 +54,10 @@ class App extends Component {
       }
     }).then(result => {
       if (result.value) {
-        this.Restart();
+        this.restart();
       }
     });
   }
-
-  Restart = () => {
-    pictures.map(item => (item.open = false));
-    var state = {
-      pictures: pictures,
-      currentlyOpened: "",
-      pairs: 0,
-      moves: 0,
-      seconds: 0,
-      minutes: 0
-    };
-    this.setState(state);
-  };
 
   startTimer = () => {
     this.myInterval = setInterval(() => {
@@ -127,6 +114,19 @@ class App extends Component {
       }
     );
   }
+
+  restart = () => {
+    pictures.map(item => (item.open = false));
+    this.setState({
+      pictures: pictures,
+      currentlyOpened: "",
+      pairs: 0,
+      moves: 0,
+      seconds: 0,
+      minutes: 0,
+      counter: 0
+    });
+  };
 
   Selector = (currentCard, id) => {
     let pictures = this.state;
