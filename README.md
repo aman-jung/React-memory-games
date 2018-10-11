@@ -11,3 +11,14 @@ There are 6 Components in this project .
 - Card component - It is used to display all the cards whether it is opened or not.
 - Clock component - It consists of the timer logic that need to be displays
 - Moves component - It consists of all the moves when the user clicks the images
+
+## What i have built
+- I have built a bird matching game in react. 
+- User is allowed to click only two images at a time . 
+- At first all the images is disabled (and seen as white screen). Once the image is click it is enabled and displayed. 
+- User can click two images i.e. if two images clicked is same then enable it and increment the count otherwise disable it
+
+## Instructions 
+
+Clone this repository as :
+### ``
