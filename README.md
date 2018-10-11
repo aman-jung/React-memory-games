@@ -21,4 +21,9 @@ There are 6 Components in this project .
 ## Instructions 
 
 Clone this repository as :
-### ``
+### `https://github.com/aman-jung/React-memory-games.git`
+
+Make sure you have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
+
+Run as
+### `npm start or yarn start`
